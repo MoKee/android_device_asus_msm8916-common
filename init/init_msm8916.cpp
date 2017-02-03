@@ -66,15 +66,15 @@ void check_device()
     sysinfo(&sys);
 
     if (PRJ_HD == 1) {
-        family = "Z00L";
+        family = "z00l";
         if (PRJ_ID == 0) {
             if (PRJ_SKU == 3) {
-                device = "Z00W"; // ZE550KG
+                device = "z00w"; // ZE550KG
             } else {
-                device = "Z00L"; // ZE550KL
+                device = "z00l"; // ZE550KL
             }
         } else if (PRJ_ID == 1) {
-            device = "Z00M"; // ZE600KL
+            device = "z00m"; // ZE600KL
         }
 
         // from - phone-xhdpi-2048-dalvik-heap.mk
@@ -83,15 +83,15 @@ void check_device()
         heapsize = "512m";
         heapminfree = "512k";
     } else if (PRJ_HD == 0) {
-        family = "Z00T";
+        family = "z00t";
         if (PRJ_ID == 0) {
-            device = "Z00T"; // ZE551KL
+            device = "z00t"; // ZE551KL
         } else if (PRJ_ID == 1) {
-            device = "Z011"; // ZE601KL
+            device = "z011"; // ZE601KL
         } else if (PRJ_ID == 2) {
-            device = "Z00C"; // ZX550KL
+            device = "z00c"; // ZX550KL
         } else if (PRJ_ID == 3) {
-            device = "Z00U"; // ZD551KL
+            device = "z00u"; // ZD551KL
         }
 
         if (sys.totalram > 2048ull * 1024 * 1024) {

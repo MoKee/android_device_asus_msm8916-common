@@ -1,3 +1,4 @@
+
 #!/bin/bash
 #
 # Copyright (C) 2016 The CyanogenMod Project
@@ -34,7 +35,7 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" "true" "$1"
 
 # Copyright headers and guards
-write_headers "Z00L Z00T"
+write_headers "z00l z00t"
 
 # The standard common blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt

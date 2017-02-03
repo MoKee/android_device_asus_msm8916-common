@@ -86,11 +86,11 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
+# MKHW
+BOARD_USES_MOKEE_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
-    $(VENDOR_PATH)/cmhw
+    hardware/mokee/mkhw \
+    $(VENDOR_PATH)/mkhw
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
